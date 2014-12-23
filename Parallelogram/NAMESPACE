@@ -1,0 +1,4 @@
+import(ggplot2)
+importFrom(plyr, ddply, mlply, summarize)
+importFrom(lubridate, decimal_date)
+exportPattern("^[^\\.k]")

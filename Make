@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# This script makes the AonInternal R package
+
+set -e
+
+# Remove unnecessary files
+cat /dev/null > Parallelogram/'#tmp#'
+rm `find Parallelogram -name '*~' -o -name '#*' -o -name '*dvi' -o -name '*tex' -o -name '.Rhistory'`
+
+R CMD check Parallelogram
+R CMD build Parallelogram
