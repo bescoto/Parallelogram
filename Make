@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# This script makes the AonInternal R package
+# This script makes the Parallelogram R package
 
 set -e
 
